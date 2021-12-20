@@ -27,7 +27,7 @@ Green = PatternFill(patternType='solid', fgColor='12db3d')
 
 from os import environ
 
-print("назад демоне в името господно")
+print("Turning on")
 
 FOLDER_PATH = f"C:/Users/{environ.get('USERNAME')}/PycharmProjects/discord_bot"
 
@@ -155,7 +155,7 @@ class MyClient(commands.Bot):
             await ctx.send(file=discord.File("server_roles_data.xlsx"))
 
     async def on_ready(self):
-        print("Sheeesh! I'm in!!!")
+        print("I'm active!")
         print('Username: {0.name}\nID: {0.id}'.format(self.user))
 
 
